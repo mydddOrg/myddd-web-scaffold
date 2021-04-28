@@ -1,0 +1,7 @@
+{
+    "name":"production",
+    "api":"https://isvgateway.workplus.io:8443/v1",
+    "clientId":"pxLpBP882067y7SVEWo87fRMw2rtu3Z4",
+    "clientSecret":"ymqrO8ZHjHNMy7yTz7TZ34gPszEJGME2",
+    "orgCode":"ww6dc4e6c2cbfbb62c"
+}

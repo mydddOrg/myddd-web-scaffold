@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react",
+    "baseUrl": "./src",
+    "experimentalDecorators":true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop":true,
+    "removeComments": false,
+    "paths": {
+      "components": ["components"],
+      "locales": ["locales"],
+      "stores": ["stores"],
+      "modules":["modules"],
+      "assets":["assets"],
+      "style":["style"],
+      "views":["views"],
+      "mobile":["mobile"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

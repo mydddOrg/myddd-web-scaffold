@@ -1,0 +1,5 @@
+{
+    "name":"production",
+    "api":"http://localhost:8080/v1",
+    "oauthTokenApi":"http://localhost:8080/oauth/token"
+}
