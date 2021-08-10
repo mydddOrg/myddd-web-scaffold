@@ -1,5 +1,3 @@
-import { action, observable } from "mobx";
-import { ChatItem } from "modules/message/domain/ChatItem";
 import { createContext } from "react";
 import { makeAutoObservable } from "mobx"
 
@@ -11,8 +9,6 @@ class MessageStore {
     }
 
     selectItem: any
-
-    chats: ChatItem[] = []
 
     checkList: string[] = []
 
@@ -33,15 +29,6 @@ class MessageStore {
 
     setSelectItem(employee: any) {
         this.selectItem = employee
-    }
-
-    addChat(chatItem: ChatItem) {
-        this.chats.push(chatItem)
-        this.chats = [...this.chats]
-    }
-
-    clearChat() {
-        this.chats = []
     }
 }
 
