@@ -37,18 +37,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ts$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: "swc-loader",
-          options: {
-            jsc: {
-              parser: {
-                syntax: "typescript",
-              },
-            },
-          },
-        },
+        test: /\.([jt]sx?)?$/,
+        use: "swc-loader",
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/i,
@@ -64,10 +55,6 @@ module.exports = {
           "css-loader",
           "less-loader",
         ],
-      },
-      {
-        test: /\.tsx?$/,
-        loader: 'ts-loader'
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
