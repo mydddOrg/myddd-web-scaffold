@@ -1,4 +1,3 @@
-import "reflect-metadata"
 import { InstanceFactory } from "../src/components/ioc/InstanceFactory"
 import { TYPES } from "../src/components/ioc/TYPES"
 InstanceFactory.initIOC()

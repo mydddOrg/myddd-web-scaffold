@@ -1,12 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-
 import { InstanceFactory } from "./components/ioc/InstanceFactory";
 import "style/common.css";
 import { observer } from "mobx-react-lite";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./views/Main";
-import "reflect-metadata";
 
 // import { useNavigate } from "react-router"
 

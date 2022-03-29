@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import { BaseRequest } from './../http/impl/BaseRequest';
 import {container, Lifecycle} from "tsyringe";
 import { TYPES } from './TYPES';
