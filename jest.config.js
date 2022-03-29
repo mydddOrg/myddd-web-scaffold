@@ -6,7 +6,7 @@ module.exports = {
   testRegex: TEST_REGEX,
   transform: {
     // "^.+\\.tsx?$": "ts-jest",
-    "^.+\\.tsx?$": "babel-jest",
+    "^.+\\.tsx?$": "@swc/jest",
     // "^.+\\.mjs$": "babel-jest",
   },
   testPathIgnorePatterns: ["<rootDir>/build/", "<rootDir>/node_modules/", "<rootDir>/dist/"],

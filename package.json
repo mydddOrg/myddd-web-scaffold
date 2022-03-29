@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@swc/core": "^1.2.161",
+    "@swc/jest": "^0.2.20",
     "@types/jest": "^27.4.1",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
@@ -51,6 +52,7 @@
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.2.2",
-    "reflect-metadata": "^0.1.13"
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.6.0"
   }
 }

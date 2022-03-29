@@ -6,6 +6,8 @@ import "style/common.css";
 import { observer } from "mobx-react-lite";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./views/Main";
+import "reflect-metadata";
+
 // import { useNavigate } from "react-router"
 
 InstanceFactory.initIOC();
