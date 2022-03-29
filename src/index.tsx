@@ -4,10 +4,9 @@ import * as ReactDOM from "react-dom";
 import { InstanceFactory } from "./components/ioc/InstanceFactory";
 import "style/common.css";
 import { observer } from "mobx-react-lite";
-import Loading from "views/common/Loading";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./views/Main";
-import { useNavigate } from "react-router";
+// import { useNavigate } from "react-router"
 
 InstanceFactory.initIOC();
 
@@ -21,7 +20,6 @@ document.body.appendChild(root);
 
 const App = observer((props?: any) => {
   // const navigate = useNavigate()
-
   return (
     <div>
       <Routes>

@@ -1,5 +1,5 @@
 {
-  "name": "weixin_demo",
+  "name": "myddd-web",
   "version": "0.2.0",
   "main": "index.js",
   "license": "MIT",
@@ -47,8 +47,6 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
     "axios": "^0.26.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
