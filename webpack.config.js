@@ -35,16 +35,21 @@ module.exports = {
   },
 
   module: {
-    rules: [{
-        test: /\.tsx?$/,
+    rules: [
+      {
+        test: /\.ts$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env', "@babel/preset-typescript"]
-          }
+            loader: "swc-loader",
+            options: {
+                jsc: {
+                    parser: {
+                        syntax: "typescript"
+                    }
+                }
+            }
         }
-      },
+    },
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],

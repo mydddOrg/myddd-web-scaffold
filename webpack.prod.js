@@ -37,16 +37,19 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.ts$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: 'babel-loader',
+          loader: "swc-loader",
           options: {
-            presets: ['@babel/preset-env', "@babel/preset-typescript"]
-          }
-        }
+            jsc: {
+              parser: {
+                syntax: "typescript",
+              },
+            },
+          },
+        },
       },
-
       {
         test: /\.css$/i,
         use: [
