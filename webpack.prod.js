@@ -14,13 +14,11 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({}),
-    new CopyPlugin(
-      {
-        patterns: [
-          {from: 'src/assets',to: './assets'}
-        ]
-      }
-    ),
+    new CopyPlugin({
+      patterns: [
+        {from: 'src/assets',to: './assets'}
+      ],
+    }),
     new CompressionPlugin()
 
   ],

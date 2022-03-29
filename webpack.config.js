@@ -23,13 +23,11 @@ module.exports = {
     // new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
     }),
-    new CopyPlugin(
-      {
-        patterns: [
-          {from: 'src/assets',to: './assets'}
-        ]
-      }
-    ),
+    new CopyPlugin({
+      patterns: [
+        {from: 'src/assets',to: './assets'}
+      ],
+    })
   ],
   output: {
     filename: 'main.bundle.js',
