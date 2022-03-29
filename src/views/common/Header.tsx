@@ -6,7 +6,7 @@ import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import { makeStyles } from "@material-ui/core";
 import ArrowBackIcon from '@material-ui/icons/ArrowBack'
-import { useHistory } from "react-router";
+import { useNavigate } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -33,11 +33,11 @@ export interface HeaderProps {
 }
 const Header = (props:HeaderProps) => {
     const classes = useStyles()
-    const history = useHistory()
+    const navigate = useNavigate();
 
     const goBack = ()=>{
         if (props.enableGoBack){
-            history.goBack()
+            navigate(-1)
         }
     }
 
