@@ -2,3 +2,4 @@ node_modules
 dist
 mhm
 stats.json
+.DS_Store

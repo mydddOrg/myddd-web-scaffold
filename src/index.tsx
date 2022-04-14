@@ -6,8 +6,6 @@ import { observer } from "mobx-react-lite";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./views/Main";
 
-// import { useNavigate } from "react-router"
-
 InstanceFactory.initIOC();
 
 const LazyMain = React.lazy(
@@ -19,13 +17,10 @@ root.id = "app";
 document.body.appendChild(root);
 
 const App = observer((props?: any) => {
-  // const navigate = useNavigate()
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Main />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<Main />} />
+    </Routes>
   );
 });
 
